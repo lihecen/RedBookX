@@ -28,6 +28,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.lihecen</groupId>
+            <artifactId>xiaohongshu-common</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

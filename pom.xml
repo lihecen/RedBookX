@@ -20,6 +20,7 @@
     <modules>
         <!-- 认证服务 -->
         <module>xiaohongshu-auth</module>
+        <module>xiaohongshu-framework</module>
     </modules>
 
     <properties>
@@ -76,6 +77,12 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lihecen</groupId>
+                <artifactId>xiaohongshu-common</artifactId>
+                <version>${revision}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
