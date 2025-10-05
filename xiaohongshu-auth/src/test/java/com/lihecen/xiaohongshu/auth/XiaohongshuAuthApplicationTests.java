@@ -30,8 +30,8 @@ class XiaohongshuAuthApplicationTests {
      */
     @Test
     void testSelect() {
-        // 查询主键 ID 为 1 的记录
-        UserDO userDO = userDOMapper.selectByPrimaryKey(1L);
+        // 查询主键 ID 为 2 的记录
+        UserDO userDO = userDOMapper.selectByPrimaryKey(2L);
         log.info("User: {}", JsonUtils.toJsonString(userDO));
     }
 
@@ -40,7 +40,7 @@ class XiaohongshuAuthApplicationTests {
      */
     @Test
     void testUpdate() {
-        UserDO userDO = UserDO.builder().id(1L).username("lihecen").updateTime(LocalDateTime.now()).createTime(LocalDateTime.now()).build();
+        UserDO userDO = UserDO.builder().id(2L).username("lihecen").updateTime(LocalDateTime.now()).createTime(LocalDateTime.now()).build();
         //　根据主键 ID 更新记录
         userDOMapper.updateByPrimaryKey(userDO);
     }
@@ -51,6 +51,6 @@ class XiaohongshuAuthApplicationTests {
     @Test
     void testDelete() {
         //　删除主键 ID　为 1 的记录
-        userDOMapper.deleteByPrimaryKey(1L);
+        userDOMapper.deleteByPrimaryKey(2L);
     }
 }
