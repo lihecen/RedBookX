@@ -20,6 +20,7 @@
 
     <modules>
         <module>xiaohongshu-common</module>
+        <module>xiaohongshu-spring-boot-starter-biz-operationlog</module>
     </modules>
 
 </project>
