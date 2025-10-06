@@ -1,0 +1,50 @@
+2025-10-06 18:08:40.812 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - Starting DruidTests using Java 17.0.12 with PID 12332 (started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth)
+2025-10-06 18:08:40.814 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - The following 1 profile is active: "dev"
+2025-10-06 18:08:43.719 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-06 18:08:44.717 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-06 18:08:45.525 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - Started DruidTests in 5.498 seconds (process running for 7.05)
+2025-10-06 18:08:47.288 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - privateKey: MIIBUwIBADANBgkqhkiG9w0BAQEFAASCAT0wggE5AgEAAkEAjaocHcAiwruSJqRRwThiy6g2ZG6BMrkqmLC2aZuIgrVvEzsvTpGlXr8ho8vPYD76YtzfpNsW00faFhaoNR4OGQIDAQABAkBETVZNCcw4s5MdynAYhwUrSCkhdx4XxKtC/0CT3oeM7RDBcX/YhJNijp4C/04cVB2BB4T4ayD7xuNROlmbBBdZAiEA03o1iO5vndtyfW8duvD3FwIcQvN7d9k6MNpdNInZJDcCIQCrfUNoTK9sILeIHKfZQyP3XSWb3fLeGTa+kou3+N7YLwIgeCNyLFNAR452cTnhyuS/imuhgItv9fsLKtuynXk+SWsCIH7zaGdZ/bNKNRPqQsev0Hxa1HCiyhxpBgHmctBqyG25AiAwnw9uv2yNPkZhPqES7pb6zxJVUoJiYRKhALgnNb6LxA==
+2025-10-06 18:08:47.291 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAI2qHB3AIsK7kiakUcE4YsuoNmRugTK5KpiwtmmbiIK1bxM7L06RpV6/IaPLz2A++mLc36TbFtNH2hYWqDUeDhkCAwEAAQ==
+2025-10-06 18:08:47.295 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - password: h3klVQ+WFMPqaIelfilWPja8X+cB6jhA8MskmJGVgKMlfgzZcXz8ZP4KQQsr70D7lqFui9qB/+eP+7Xgvy82gA==
+2025-10-06 18:08:47.347 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplicationTests]: XiaohongshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-06 18:08:47.352 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplication for test class com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplicationTests
+2025-10-06 18:08:47.453 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==>  Preparing: delete from t_user where id = ?
+2025-10-06 18:08:47.764 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==> Parameters: 2(Long)
+2025-10-06 18:08:47.978 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - <==    Updates: 1
+2025-10-06 18:08:47.993 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, username, create_time, update_time) values (?, ?, ?, ?)
+2025-10-06 18:08:48.314 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 栗赫岑(String), 2025-10-06T18:08:47.993694500(LocalDateTime), 2025-10-06T18:08:47.993694500(LocalDateTime)
+2025-10-06 18:08:48.348 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-10-06 18:08:48.367 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, username, create_time, update_time from t_user where id = ?
+2025-10-06 18:08:48.385 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 2(Long)
+2025-10-06 18:08:48.427 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2025-10-06 18:08:48.454 [main] INFO  c.l.x.auth.XiaohongshuAuthApplicationTests - User: null
+2025-10-06 18:08:48.464 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - ==>  Preparing: update t_user set username = ?, create_time = ?, update_time = ? where id = ?
+2025-10-06 18:08:48.468 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - ==> Parameters: lihecen(String), 2025-10-06T18:08:48.464607900(LocalDateTime), 2025-10-06T18:08:48.464607900(LocalDateTime), 2(Long)
+2025-10-06 18:08:48.477 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - <==    Updates: 0
+2025-10-06 18:08:48.541 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-06 18:08:48.566 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-10-06 18:10:53.113 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - Starting DruidTests using Java 17.0.12 with PID 18208 (started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth)
+2025-10-06 18:10:53.115 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - The following 1 profile is active: "dev"
+2025-10-06 18:10:55.828 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-06 18:10:56.620 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-06 18:10:57.182 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - Started DruidTests in 4.743 seconds (process running for 6.126)
+2025-10-06 18:10:58.549 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - privateKey: MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEA1nzhN4Lz+UlepJ1cNEcB0yMx4U7/8PkVp7MlyfZDeSvip43xHOCOd5V0Y/40C/izfbO8xlvPxJrnNrPbWJaNBQIDAQABAkAUtjVnT2Fw0pltivaC49J0yYLBD4hehCcHrSB6iqnEUv/IyVdS0HEFAu/ueR6yZbZEQRtjmBH4ZR2FbAS7DPHHAiEA5MNdXfo6IE9SkxdelcjbJIOAJ0xkssp5TYcLfrynCusCIQDwBmgxEtfJ0r9ktgTXn08gLk8GVEQHqQq6aQbpdb3rzwIhAIi66FxaSlGzd5RpHGSEZ878NiXG+E0Qzc3z0IAQu/q/AiEA1fwwSYfN/602Wpf3qy/o//ypETBw0g9/c/8MXXhN0HsCIQCybhayG0PXv87ML5GHyYSdhEsyEsatDKdVcUvbjjzzUQ==
+2025-10-06 18:10:58.552 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANZ84TeC8/lJXqSdXDRHAdMjMeFO//D5FaezJcn2Q3kr4qeN8RzgjneVdGP+NAv4s32zvMZbz8Sa5zaz21iWjQUCAwEAAQ==
+2025-10-06 18:10:58.555 [main] INFO  com.lihecen.xiaohongshu.auth.DruidTests - password: oAOOOk2uXuownwmxSFk93vElg9V2MfWKOu8qOMGwAmi3obDugVXf/9pZiHc/UfK0xIYa5hnmqF+1/RS2u+PA6Q==
+2025-10-06 18:10:58.601 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplicationTests]: XiaohongshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-06 18:10:58.607 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplication for test class com.lihecen.xiaohongshu.auth.XiaohongshuAuthApplicationTests
+2025-10-06 18:10:58.694 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==>  Preparing: delete from t_user where id = ?
+2025-10-06 18:10:58.934 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==> Parameters: 2(Long)
+2025-10-06 18:10:58.949 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - <==    Updates: 0
+2025-10-06 18:10:58.961 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, username, create_time, update_time) values (?, ?, ?, ?)
+2025-10-06 18:10:59.150 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 栗赫岑(String), 2025-10-06T18:10:58.960513700(LocalDateTime), 2025-10-06T18:10:58.960513700(LocalDateTime)
+2025-10-06 18:10:59.179 [main] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-10-06 18:10:59.195 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, username, create_time, update_time from t_user where id = ?
+2025-10-06 18:10:59.205 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 2(Long)
+2025-10-06 18:10:59.234 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2025-10-06 18:10:59.256 [main] INFO  c.l.x.auth.XiaohongshuAuthApplicationTests - User: null
+2025-10-06 18:10:59.267 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - ==>  Preparing: update t_user set username = ?, create_time = ?, update_time = ? where id = ?
+2025-10-06 18:10:59.271 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - ==> Parameters: lihecen(String), 2025-10-06T18:10:59.267329600(LocalDateTime), 2025-10-06T18:10:59.267329600(LocalDateTime), 2(Long)
+2025-10-06 18:10:59.277 [main] DEBUG c.l.x.a.d.mapper.UserDOMapper.updateByPrimaryKey - <==    Updates: 0
+2025-10-06 18:10:59.315 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-06 18:10:59.331 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
