@@ -1,8 +1,6 @@
 package com.lihecen.xiaohongshu.auth;
 
 import com.lihecen.framework.common.util.JsonUtils;
-import com.lihecen.xiaohongshu.auth.domain.dataobject.UserDO;
-import com.lihecen.xiaohongshu.auth.domain.mapper.UserDOMapper;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
