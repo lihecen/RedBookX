@@ -54,8 +54,8 @@ spring:
           max-idle: 10 # 连接池中的最大空闲连接
 
 #aliyun: # 接入阿里云（发送短信使用）
-  # accessKeyId: LTAI5tKvGQiyu4ZAnLhtyRLb
-  # accessKeySecret: gGFp7Ul3YgAsM0aTec30yRqCqttKVO
+# accessKeyId: LTAI5tKvGQiyu4ZAnLhtyRLb
+# accessKeySecret: gGFp7Ul3YgAsM0aTec30yRqCqttKVO
 
 
 
