@@ -1,0 +1,35 @@
+2025-10-13 00:52:54.567 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Starting XiaohongshuAuthApplication using Java 17.0.12 with PID 8728 (C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth\target\classes started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu)
+2025-10-13 00:52:54.575 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - The following 1 profile is active: "dev"
+2025-10-13 00:52:56.867 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-13 00:52:56.878 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-13 00:52:56.969 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2025-10-13 00:52:58.464 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-10-13 00:52:58.488 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-13 00:52:58.488 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-10-13 00:52:58.674 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-13 00:52:58.674 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3883 ms
+2025-10-13 00:52:58.838 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-13 00:52:59.618 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-13 00:53:01.334 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-13 00:53:01.342 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Started XiaohongshuAuthApplication in 8.549 seconds (process running for 10.735)
+2025-10-13 00:54:50.239 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-13 00:54:50.251 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2025-10-13 00:54:50.712 [http-nio-8080-exec-1] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15241310838"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2025-10-13 00:54:55.079 [http-nio-8080-exec-1] INFO  c.l.x.a.service.impl.VerificationCodeServiceImpl - ==> 手机号: 15241310838, 已生成验证码：【951854】
+2025-10-13 00:54:55.082 [AuthExecutor-1] INFO  com.lihecen.xiaohongshu.auth.sms.AliyunSmsHelper - ==> 开始短信发送, phone: 15241310838, signName: 速通互联验证码, templateCode: 100001, templateParam: {"code":"951854","min":"3"}
+2025-10-13 00:54:55.135 [http-nio-8080-exec-1] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [发送短信验证码], 耗时: 4439ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+2025-10-13 00:55:07.724 [AuthExecutor-1] INFO  com.lihecen.xiaohongshu.auth.sms.AliyunSmsHelper - ==> 短信发送成功, response: {"headers":{"access-control-allow-origin":"*","date":"Sun, 12 Oct 2025 16:55:07 GMT","content-length":"135","keep-alive":"timeout=25","x-acs-request-id":"9707B79A-89F9-5505-A063-F08CF37C77C2","connection":"keep-alive","content-type":"application/json;charset=utf-8","etag":"1HAajxt/9nK+AVZ8dq8sb1Q5","access-control-expose-headers":"*","x-acs-trace-id":"da5001c6de3bceca87c61e7869d738f7"},"statusCode":200,"body":{"accessDeniedDetail":null,"code":"OK","message":"OK","model":{"bizId":"847704160288107802^0","outId":null,"requestId":"cae21a75-1828-4a9f-a7ee-464cca8600f8","verifyCode":null},"requestId":null,"success":true}}
+2025-10-13 00:56:27.967 [http-nio-8080-exec-5] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [用户登录/注册], 入参: {"phone":"15241310838","code":"951854","password":null,"type":1}, 请求类: UserController, 请求方法: loginAndRegister =================================== 
+2025-10-13 00:56:28.053 [http-nio-8080-exec-5] DEBUG c.l.x.a.domain.mapper.UserDOMapper.selectByPhone - ==>  Preparing: select id, password from t_user where phone = ?
+2025-10-13 00:56:28.386 [http-nio-8080-exec-5] DEBUG c.l.x.a.domain.mapper.UserDOMapper.selectByPhone - ==> Parameters: 15241310838(String)
+2025-10-13 00:56:28.689 [http-nio-8080-exec-5] DEBUG c.l.x.a.domain.mapper.UserDOMapper.selectByPhone - <==      Total: 0
+2025-10-13 00:56:28.691 [http-nio-8080-exec-5] INFO  c.l.xiaohongshu.auth.service.impl.UserServiceImpl - ==> 用户是否注册, phone: 15241310838, userDO: null
+2025-10-13 00:56:28.702 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaohongshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-13 00:56:28.850 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10002(String), null, 小红薯10002(String), null, null, null, 15241310838(String), null, 0(Integer), null, 2025-10-13T00:56:28.701199500(LocalDateTime), 2025-10-13T00:56:28.701199500(LocalDateTime), false(Boolean)
+2025-10-13 00:56:28.926 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-10-13 00:56:28.932 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserRoleDOMapper.insert - ==>  Preparing: insert into t_user_role_rel (id, user_id, role_id, create_time, update_time, is_deleted ) values (?, ?, ?, ?, ?, ? )
+2025-10-13 00:56:28.935 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserRoleDOMapper.insert - ==> Parameters: null, 1(Long), 1(Long), 2025-10-13T00:56:28.932365100(LocalDateTime), 2025-10-13T00:56:28.932365100(LocalDateTime), false(Boolean)
+2025-10-13 00:56:28.954 [http-nio-8080-exec-5] DEBUG c.l.x.auth.domain.mapper.UserRoleDOMapper.insert - <==    Updates: 1
+2025-10-13 00:56:29.076 [http-nio-8080-exec-5] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [用户登录/注册], 耗时: 1109ms, 出参: {"success":true,"message":null,"errorCode":null,"data":"dacd9a6c-fb38-4518-b2b2-429ecbd407c9"} =================================== 
+2025-10-13 00:57:41.679 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-13 00:57:41.695 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
