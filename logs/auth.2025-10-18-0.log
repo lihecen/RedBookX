@@ -1,0 +1,25 @@
+2025-10-18 00:52:32.316 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Starting XiaohongshuAuthApplication using Java 17.0.12 with PID 21884 (C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth\target\classes started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu)
+2025-10-18 00:52:32.321 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - The following 1 profile is active: "dev"
+2025-10-18 00:52:33.846 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-18 00:52:33.856 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-18 00:52:33.937 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2025-10-18 00:52:35.966 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-10-18 00:52:35.985 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-18 00:52:35.985 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-10-18 00:52:36.240 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-18 00:52:36.240 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3824 ms
+2025-10-18 00:52:36.423 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-18 00:52:37.374 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-18 00:52:39.957 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-18 00:52:39.971 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Started XiaohongshuAuthApplication in 8.879 seconds (process running for 11.031)
+2025-10-18 00:55:04.949 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-18 00:55:04.957 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-10-18 00:55:05.320 [http-nio-8080-exec-1] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15241310838"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2025-10-18 00:55:11.627 [http-nio-8080-exec-1] INFO  c.l.x.a.service.impl.VerificationCodeServiceImpl - ==> 手机号: 15241310838, 已生成验证码：【370043】
+2025-10-18 00:55:11.633 [AuthExecutor-1] INFO  com.lihecen.xiaohongshu.auth.sms.AliyunSmsHelper - ==> 开始短信发送, phone: 15241310838, signName: 速通互联验证码, templateCode: 100001, templateParam: {"code":"370043","min":"3"}
+2025-10-18 00:55:11.681 [http-nio-8080-exec-1] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [发送短信验证码], 耗时: 6377ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+2025-10-18 00:55:13.712 [AuthExecutor-1] INFO  com.lihecen.xiaohongshu.auth.sms.AliyunSmsHelper - ==> 短信发送成功, response: {"headers":{"access-control-allow-origin":"*","date":"Fri, 17 Oct 2025 16:55:13 GMT","content-length":"135","keep-alive":"timeout=25","x-acs-request-id":"DB26F57B-4136-5BB6-98C7-F0E46F7B64BC","connection":"keep-alive","content-type":"application/json;charset=utf-8","etag":"13V1Rq3AnyBHIc9Kn/OJYBw5","access-control-expose-headers":"*","x-acs-trace-id":"bd5ad320d45ccd0757efe963b7686ff9"},"statusCode":200,"body":{"accessDeniedDetail":null,"code":"OK","message":"OK","model":{"bizId":"306416660720113335^0","outId":null,"requestId":"ead7f36a-0cda-4204-8305-cb73821803db","verifyCode":null},"requestId":null,"success":true}}
+2025-10-18 00:57:14.115 [http-nio-8080-exec-5] INFO  c.l.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [用户登录/注册], 入参: {"phone":"15241310837","code":"370043","password":null,"type":1}, 请求类: UserController, 请求方法: loginAndRegister =================================== 
+2025-10-18 00:57:14.221 [http-nio-8080-exec-5] WARN  c.l.x.auth.exception.GlobalExceptionHandler - /user/login request fail, errorCode: AUTH-20001, errorMessage: 验证码错误
+2025-10-18 00:57:59.834 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-18 00:57:59.867 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
