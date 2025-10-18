@@ -1,0 +1,45 @@
+2025-10-19 04:36:16.303 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Starting XiaohongshuAuthApplication using Java 17.0.12 with PID 13824 (C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth\target\classes started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu)
+2025-10-19 04:36:16.307 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - The following 1 profile is active: "dev"
+2025-10-19 04:36:17.421 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-19 04:36:17.426 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-19 04:36:17.466 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-10-19 04:36:18.610 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-10-19 04:36:18.622 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-19 04:36:18.622 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-10-19 04:36:18.764 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-19 04:36:18.764 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2380 ms
+2025-10-19 04:36:18.904 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-19 04:36:19.591 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-19 04:36:21.145 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-19 04:36:21.155 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Started XiaohongshuAuthApplication in 6.059 seconds (process running for 7.978)
+2025-10-19 04:36:21.158 [main] INFO  c.l.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2025-10-19 04:36:24.124 [main] DEBUG c.l.x.a.d.mapper.RoleDOMapper.selectEnabledList - ==>  Preparing: select id, role_key, role_name from t_role where status = 0 and is_deleted = 0
+2025-10-19 04:36:24.414 [main] DEBUG c.l.x.a.d.mapper.RoleDOMapper.selectEnabledList - ==> Parameters: 
+2025-10-19 04:36:24.501 [main] DEBUG c.l.x.a.d.mapper.RoleDOMapper.selectEnabledList - <==      Total: 1
+2025-10-19 04:36:24.530 [main] DEBUG c.l.x.a.d.m.RolePermissionDOMapper.selectByRoleIds - ==>  Preparing: select role_id, permission_id from t_role_permission_rel where role_id in ( ? )
+2025-10-19 04:36:24.533 [main] DEBUG c.l.x.a.d.m.RolePermissionDOMapper.selectByRoleIds - ==> Parameters: 1(Long)
+2025-10-19 04:36:24.542 [main] DEBUG c.l.x.a.d.m.RolePermissionDOMapper.selectByRoleIds - <==      Total: 2
+2025-10-19 04:36:24.543 [main] DEBUG c.l.x.a.d.m.P.selectAppEnabledList - ==>  Preparing: select id, name, permission_key from t_permission where status = 0 and type = 3 and is_deleted = 0
+2025-10-19 04:36:24.546 [main] DEBUG c.l.x.a.d.m.P.selectAppEnabledList - ==> Parameters: 
+2025-10-19 04:36:24.554 [main] DEBUG c.l.x.a.d.m.P.selectAppEnabledList - <==      Total: 2
+2025-10-19 04:36:24.627 [main] INFO  c.l.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，成功同步角色权限数据到 Redis 中...
+2025-10-19 04:37:13.797 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-19 04:37:13.819 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-10-19 04:39:39.615 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Starting XiaohongshuAuthApplication using Java 17.0.12 with PID 9872 (C:\Users\15-bp102TX\IdeaProjects\xiaohongshu\xiaohongshu-auth\target\classes started by 15-bp102TX in C:\Users\15-bp102TX\IdeaProjects\xiaohongshu)
+2025-10-19 04:39:39.620 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - The following 1 profile is active: "dev"
+2025-10-19 04:39:40.526 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-19 04:39:40.530 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-19 04:39:40.563 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-10-19 04:39:41.447 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-10-19 04:39:41.457 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-19 04:39:41.457 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-10-19 04:39:41.590 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-19 04:39:41.591 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1895 ms
+2025-10-19 04:39:41.726 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-10-19 04:39:42.441 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-19 04:39:43.837 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-19 04:39:43.846 [main] INFO  c.l.xiaohongshu.auth.XiaohongshuAuthApplication - Started XiaohongshuAuthApplication in 5.451 seconds (process running for 6.972)
+2025-10-19 04:39:43.850 [main] INFO  c.l.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2025-10-19 04:39:48.073 [main] WARN  c.l.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2025-10-19 04:41:02.010 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-10-19 04:41:02.022 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
