@@ -15,7 +15,7 @@ spring:
         # 所属组
         group: DEFAULT_GROUP
         # 命名空间
-        namespace: public
+        namespace: xiaohongshu
         # 配置文件格式
         file-extension: yaml
         # 是否开启动态刷新
