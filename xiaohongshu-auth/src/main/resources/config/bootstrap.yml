@@ -20,3 +20,13 @@ spring:
         file-extension: yaml
         # 是否开启动态刷新
         refresh-enabled: true
+      discovery:
+        # 启用服务发现
+        enabled: true
+        # 所属组
+        group: DEFAULT_GROUP
+        # 命名空间
+        namespace: xiaohongshu
+        # 指定 Nacos 配置中心的服务器地址
+        server-addr: 127.0.0.1:8848
+
